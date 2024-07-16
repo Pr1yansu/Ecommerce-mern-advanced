@@ -17,7 +17,7 @@ const BreadcrumbContent = () => {
   }
   return (
     <>
-      <BreadcrumbList className="px-2 py-4">
+      <BreadcrumbList>
         {paths.map((path, index) => (
           <React.Fragment key={index}>
             <BreadcrumbItem>

@@ -150,13 +150,19 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="bg-cyan-700 border-t border-white">
+      <div className="bg-cyan-700 sm:border-t border-white">
         <div className=" flex items-center max-w-screen-xl mx-auto justify-between p-2">
-          <Link href="/">
-            <Image src="/logo.svg" width={150} height={50} alt="logo" />
+          <Link href="/" className="w-36">
+            <Image
+              src="/logo.svg"
+              width={150}
+              height={50}
+              alt="logo"
+              className="cursor-pointer w-full"
+            />
           </Link>
           <SearchInput />
-          <div className="flex gap-2 text-white">
+          <div className="flex gap-2 text-white max-sm:hidden">
             <Link href="/cart">
               <ShoppingCart className="w-6 h-6" />
             </Link>
@@ -183,7 +189,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className=" bg-slate-100">
-        <div className="mx-auto max-w-screen-xl max-sm:flex items-center justify-between">
+        <div className="mx-auto max-w-screen-xl max-sm:flex items-center justify-between py-4 px-2">
           <Breadcrumb>
             <BreadcrumbContent />
           </Breadcrumb>
