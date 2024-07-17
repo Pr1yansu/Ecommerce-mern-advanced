@@ -189,11 +189,11 @@ const Navbar = () => {
         </div>
       </div>
       <div className=" bg-slate-100">
-        <div className="mx-auto max-w-screen-xl max-sm:flex items-center justify-between py-4 px-2">
+        <div className="mx-auto max-w-screen-xl max-sm:flex items-center justify-between">
           <Breadcrumb>
             <BreadcrumbContent />
           </Breadcrumb>
-          <div className="sm:hidden">
+          <div className="sm:hidden p-2">
             <MobileMenu />
           </div>
         </div>
